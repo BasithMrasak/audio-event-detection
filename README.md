@@ -19,7 +19,8 @@ The project includes data loading, augmentation, log-mel spectrogram feature ext
 │   └── best_model.pt             # Trained model
 ├── src/
 │   └── dataset.py                # ESC-50 dataset indexing utilities
-└── README.md```
+└── README.md
+```
 
 # Setup Instructions
 
