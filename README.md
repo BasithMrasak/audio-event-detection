@@ -67,12 +67,12 @@ Open in browser: http://127.0.0.1:5000
 Upload a .wav file to get the predicted sound class.
 
 # Solution Approach
-=>Audio preprocessing
+=> Audio preprocessing
 
 Each audio file is resampled to 22,050 Hz and converted into a
 log-mel spectrogram representation.
 
-=>Data augmentation
+=> Data augmentation
 
 To improve generalization, the training pipeline applies:
 
@@ -84,7 +84,7 @@ SpecAugment (time and frequency masking)
 
 Augmentation is applied only to the training split.
 
-=>Model architecture
+=> Model architecture
 
 A CNN is used to process log-mel spectrograms as 2D inputs.
 The network consists of multiple convolutional blocks followed by
@@ -100,7 +100,7 @@ Best model is selected using test-fold accuracy
 
 Model checkpoints are saved during training
 
-=>Evaluation
+=> Evaluation
 
 The model is evaluated on the ESC-50 test fold using:
 
